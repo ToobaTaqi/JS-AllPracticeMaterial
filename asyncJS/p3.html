@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project 3</title>
+    <style>
+      body {
+        background-color: #212121;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Async JS Project 3</h1>
+    <p>changing BG colors with buttons</p>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+  </body>
+
+  <script>
+    const randomNo = function () {
+      const hex = "0123456789ABCDEF";
+      let color = "#";
+      for (i = 0; i < 6; i++) {
+        // const c = (color += hex[Math.floor(Math.random() * 16)]);
+        // console.log(c);
+        color += hex[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    };
+
+    let getInterval = null;
+    const startChangingColor = function () {
+      if (!getInterval) {
+        // Check if the interval is already set
+        getInterval = setInterval(function () {
+          console.log(randomNo());
+          document.body.style.backgroundColor = randomNo();
+        }, 1000);
+      }
+    };
+
+    document
+      .getElementById("start")
+      .addEventListener("click", startChangingColor);
+
+    const stopChangingColor = function () {
+      if (getInterval) {
+        clearInterval(getInterval);
+        console.log("Intervals Stopped!");
+        getInterval = null; //flushout the interval
+      }
+    };
+
+    document
+      .getElementById("stop")
+      .addEventListener("click", stopChangingColor);
+  </script>
+</html>

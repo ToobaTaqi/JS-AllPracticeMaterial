@@ -1,0 +1,43 @@
+Beginner
+1. Change Text Content: Create a button that changes the text content of a paragraph to "Text Changed!" when clicked.
+
+2. Show/Hide Elements: Create a button that toggles the visibility of a div with the text "This is some content."
+
+3. Add/Remove Class: Create a button that adds a class to a div, changing its background color when clicked.
+
+4. Update Image Source: Create a button that changes the `src` attribute of an image when clicked.
+
+5. Form Input Value: Create a text input and a button. When the button is clicked, display the value of the text input in a paragraph.
+
+Intermediate
+6. Create and Append Elements: Create a button that, when clicked, adds a new list item to an unordered list.
+
+7. Remove Elements: Create a button that removes the last item from an unordered list when clicked.
+
+8. Modify CSS Styles: Create a button that changes the font size and color of a paragraph when clicked.
+
+9. Toggle Between Images: Create a button that toggles between two images when clicked.
+
+10. Form Validation: Create a simple form with an input field and a submit button. When the submit button is clicked, check if the input field is empty. If it is, display an error message; otherwise, display a success message.
+
+Advanced
+11. Dynamic Content Loading: Create a button that fetches data from an API and displays it in a list when clicked.
+
+12. Drag and Drop: Implement a simple drag-and-drop interface where items can be dragged from one container and dropped into another.
+
+13. Image Gallery with Thumbnails: Create an image gallery where clicking on a thumbnail updates a main display area with the larger version of the image.
+
+14. Carousel/Slider: Create an image carousel that automatically cycles through images and also allows manual navigation via next/previous buttons.
+
+15. To-Do List with Local Storage: Create a to-do list application where tasks can be added, marked as completed, and deleted. Persist the tasks in local storage so they remain after a page reload.
+
+ Pro
+16. Modal Window: Create a modal window that opens when a button is clicked and closes when a close button inside the modal is clicked or when clicking outside the modal.
+
+17. Accordion Menu: Create an accordion menu where clicking on a section header expands the section and collapses any previously expanded section.
+
+18. Infinite Scroll: Implement an infinite scroll feature where more content is loaded and appended to the page as the user scrolls down.
+
+19. Filterable Table: Create a table with a search input that filters rows based on the input value.
+
+20. Interactive Map: Integrate a map (e.g., Google Maps or Leaflet) into a webpage and add functionality to display markers based on a list of locations.

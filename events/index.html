@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <div id="paintings">
+      <img
+        width="200"
+        src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/65/78ce0081ad11e681d7bb31b0a632ef/starry-night.jpg"
+        alt="minimalism"
+        id="vanGogh"
+      />
+      <img
+        width="200"
+        src="https://cdn.britannica.com/87/2087-004-264616BB/Mona-Lisa-oil-wood-panel-Leonardo-da.jpg"
+        alt="monalisa"
+        id="monalisa"
+      />
+      <img
+        width="200"
+        src="https://cdn.shopify.com/s/files/1/0047/4231/6066/files/The_Scream_by_Edvard_Munch_1893_800x.png"
+        alt="scream"
+        id="scream"
+      />
+    </div>
+  </body>
+  <script src="./app.js"></script>
+  <!-- <script>
+    // document.getElementById("monalisa").onclick = function () {
+    //   alert("the monalisa clicked");
+    // }; //not a good approach either because onclick gives limited features
+
+    document.getElementById("paintings").addEventListener(
+      "click",
+      function (e) {
+        console.log("paintings clicked");
+        // alert("the monalisa clicked");
+      },
+      false //event propagation by default is false
+    );
+    document.getElementById("monalisa").addEventListener(
+      "click",
+      function (e) {
+        console.log("monalisa clicked");
+        e.stopPropagation(); //event bubble hokr upr k element pr nhi jaega
+      },
+      false
+    );
+    // things to study must:
+    //type,timestamp, defaultPrevented(), target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY, altKey, ctrlKey, keyCode, keyboard speed
+
+    // preventDefault()
+    document.getElementById("scream").addEventListener(
+      "click",
+      function (e) {
+        console.log("the scream clicked")
+        e.preventDefault();
+        e.stopPropagation()
+      },
+      false
+    );
+  </script> -->
+</html>
